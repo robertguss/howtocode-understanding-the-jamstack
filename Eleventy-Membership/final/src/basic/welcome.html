@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav"><a href="/"
+    class="brand w-nav-brand"><img src="/assets/images/heart.svg" alt=""></a>
+  <nav role="navigation" class="homepage-nav-menu w-nav-menu">
+    <a href="#" class="nav-link w-nav-link" data-ms-modal="profile">Basic Account</a>
+    <!-- <a href="/basic/upgrade"
+      class="button navbar-cta w-nav-link">Change Plan</a></nav> -->
+  <div class="menu-button w-nav-button">
+    <div class="w-icon-nav-menu"></div>
+  </div>
+</div>
+<div class="delete-me-section">
+  <h1>Hi, <span ms-data="first-name">firstName</span> <span ms-data="last-name">lastName</span><br>Welcome to Basic!
+  </h1>
+  <div class="w-richtext">
+    <p>This page is specifically for new members. Now that you have an account you can access any URL that starts with
+      /basic</p>
+    <p>‍</p>
+    <h4>Give it a try:</h4>
+    <!-- <p>Take me to <a href="/basic/account">/basic/account</a></p> -->
+    <p>Try to take me to <a href="/premium/account">/premium/account</a></p>
+  </div>
+</div>
+
+{% endblock %}

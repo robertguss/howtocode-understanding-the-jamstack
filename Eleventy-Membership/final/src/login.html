@@ -1,0 +1,59 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+
+<div class="page-wrapper">
+  <div class="login-section">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <div class="container w-clearfix"><a href="/" class="brand w-nav-brand"><img src="/assets/images/heart.svg"
+            width="128" alt=""></a><a href="/signup" class="nav-link login-link w-nav-link">SIGN UP</a></div>
+    </div>
+    <div class="login-container w-form">
+      <form id="login" name="wf-form-login" data-name="login" method="post" ms-login="true" class="login-form" data-ms-form="login">
+        <h1 class="login-head">Welcome back!</h1>
+        
+        <label class="login-label">Email</label>
+        <input type="email"
+          class="login-field w-input" maxlength="256" name="email" data-name="email" placeholder="Email Address"
+          ms-field="email" required="" data-ms-member="email">
+          
+          <label class="login-label">Password</label>
+          <input type="password"
+          class="login-field w-input" maxlength="256" name="password" data-name="Password" placeholder="Password"
+          ms-field="password" required="" data-ms-member="password">
+          
+          <input type="submit" value="CONTINUE" data-wait="Please wait..."
+          class="button full-button w-button"><a href="#/ms/password-reset" ms-forgot="true" class="password-link">I forgot my
+          password</a>
+      </form>
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="error-message w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
+  </div>
+  <div class="w-embed">
+    <style>
+      li {
+        box-sizing: border-box;
+        line-height: 22px;
+        padding: 0 0 7px 12px;
+      }
+
+      .free-list {
+        box-sizing: border-box;
+        color: #000;
+        list-style: url(https://uploads-ssl.webflow.com/5b65b0c55fc94c62a8474cbe/5b68a1be5fc94cc3e849c95a_plan-checklist.svg);
+        margin-bottom: 0;
+        margin-left: -12px;
+        margin-top: 0;
+      }
+    </style>
+  </div>
+</div>
+
+
+{% endblock %}

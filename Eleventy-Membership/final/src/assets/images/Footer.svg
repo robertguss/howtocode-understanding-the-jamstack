@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <path id="footer-a" d="M0,-4.54747351e-12 C169.333333,22.1258768 321.297635,33.1888152 455.892905,33.1888152 C677.096207,33.1888152 925.131905,22.1258768 1200,-4.54747351e-12 L1200,300 L0,300 L0,-4.54747351e-12 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#22364E" xlink:href="#footer-a"/>
+  </g>
+</svg>

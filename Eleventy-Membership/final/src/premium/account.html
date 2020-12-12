@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div class="page-wrapper">
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav"><a href="/"
+      class="brand w-nav-brand"><img src="/assets/images/heart.svg" alt=""></a>
+    <nav role="navigation" class="homepage-nav-menu w-nav-menu">
+      <a href="/basic/upgrade"
+        class="button navbar-cta w-nav-link">Change Plan</a></nav>
+    <div class="menu-button w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div>
+  </div>
+  <div class="delete-me-section">
+    <h1>Premium Account</h1>
+    <div class="w-richtext">
+      <p>Member&#x27;s only areas can be any combination of the following:</p>
+      <ul>
+        <li>an individual page</li>
+        <li>a group of pages</li>
+        <li>folders</li>
+        <li>CMS items</li>
+        <li>or entire CMS collections</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
