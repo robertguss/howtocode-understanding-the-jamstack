@@ -1,9 +1,15 @@
 ---
-title: 'My First Post'
-date: '2020-12-12'
-description: 'This is the description of my first post'
-tags: [markdown]
-categories: [syntax]
+title: My First Post!!
+date: 2020-12-15
+description: This is the description of my first post
+tags:
+  - markdown
+  - test
+  - hi
+categories:
+  - syntax
+  - test
+  - hi
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel nibh ligula. Duis in pulvinar mi. Mauris imperdiet
