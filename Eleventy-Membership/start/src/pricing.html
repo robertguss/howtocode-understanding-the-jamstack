@@ -1,0 +1,181 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="page-wrapper">
+  <div class="navbar-placeholder">
+    <div class="navbar-ix-trigger"></div>
+  </div>
+  <div class="navbar-fixed">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <div class="container navbar-container"><a href="index" class="brand w-nav-brand"><img src="/assets/images/heart.svg"
+            alt=""></a>
+        <nav role="navigation" class="homepage-nav-menu w-nav-menu"><a href="http://memberstack.io/webflow"
+            target="_blank" class="nav-link w-nav-link">MemberStack</a>
+          <div data-hover="1" data-delay="100" class="nav-dropdown w-dropdown">
+            <div class="nav-link dropdown-toggle w-dropdown-toggle">
+              <div class="inline-block">Home</div><img src="/assets/images/Down.svg" width="9" alt="" class="dropdown-icon">
+              <div class="div-extender"></div>
+            </div>
+            <nav class="nav-dropdown-list w-dropdown-list">
+              <div class="dropdown-diamond"></div><a href="index"
+                class="nav-link dropdown-nav-link w-nav-link">Home 1</a><a href="home-layout-two"
+                class="nav-link dropdown-nav-link w-nav-link">Home 2</a>
+            </nav>
+          </div><a href="pricing" class="nav-link w-nav-link w--current">Pricing</a>
+          <a href="basic/account" class="nav-link w-inline-block">
+            <div ms-hide-member="basic" class="hidden-with-an-attribute" data-ix="black-tooltip-hover">
+              <div class="black-tooltip lock-tooltip" data-ix="black-tooltip-initial">
+                <div>Member&#x27;s Only</div>
+                <div class="black-diamond"></div>
+              </div>
+            </div>
+            <div class="inline-block">Basic</div>
+          </a>
+          <a href="premium/account" class="nav-link w-inline-block">
+            <div ms-hide-member="premium" class="hidden-with-an-attribute hide-premium-member"
+              data-ix="black-tooltip-hover">
+              <div class="black-tooltip lock-tooltip" data-ix="black-tooltip-initial">
+                <div>Member&#x27;s Only</div>
+                <div class="black-diamond"></div>
+              </div>
+            </div>
+            <div class="inline-block">Premium</div>
+          </a><a href="https://webflow.com/website/1-Clonable-Membership-Template?rfsn=1495911.39ce0" target="_blank"
+            class="button navbar-cta hide-current w-nav-link">Clone Project</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="nav-icon w-icon-nav-menu"></div>
+        </div>
+      </div>
+      <div data-w-id="6c911c59-03a0-8cce-a41f-ab2721526686" class="navbar-shadow"></div>
+    </div>
+  </div>
+  <div class="pricing-section pricing-page">
+    <div class="container slim-container">
+      <h2 class="center-h2">2-Tier Pricing</h2>
+      <div class="home-text center-home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</div>
+      <div>
+        <div class="pricing-row">
+          <div class="pricing-column basic-column">
+            <div class="plan-name">Basic</div>
+            <div class="plan-amount-block"><span class="dollar-sign">$</span><span class="plan-price">49</span><span
+                class="plan-duration">/ mo</span></div>
+            <div class="plan-features">
+              <div>One reason why you need this.</div>
+              <div>Another great benefit goes here.</div>
+              <div>Why haven&#x27;t you bought this yet?!</div>
+            </div>
+            <a data-membership-id="5c61ea857579e5001704b4ea" href="signup"
+              class="button full-button w-inline-block">
+              <div>Get Started</div>
+            </a>
+            <div class="pricing-accent red-accent"></div>
+          </div>
+          <div class="pricing-column">
+            <div class="plan-name">Premium</div>
+            <div class="plan-amount-block"><span class="dollar-sign">$</span><span class="plan-price">499</span><span
+                class="plan-duration">/ yr</span></div>
+            <div class="plan-features">
+              <div>All the stuff over there plus...</div>
+              <div>Another great benefit goes here.</div>
+              <div>It&#x27;s so crazy good you have to</div>
+              <div>You can help but buy this thing</div>
+            </div>
+            <a data-membership-id="5c61ea9d7579e5001704b4eb" href="signup"
+              class="button full-button secondary-button w-inline-block">
+              <div>Get Started</div>
+            </a>
+            <div class="pricing-accent"></div>
+          </div>
+        </div>
+        <div class="pricing-disclaimer">*Price does not include additional taxes, fees, and surcharges. To learn more,
+          please <a href="#" class="link">contact our sales team</a>.<br></div>
+      </div>
+      <div>
+        <h3 class="faq-h2">Frequently Asked Questions</h3>
+        <div class="faq-min-height">
+          <div class="faq-wrap">
+            <div class="faq-question">
+              <div class="faq-q-text">Do you offer any discounts?</div>
+              <div class="faq-plus-wrap">
+                <div class="faq-plus-l"></div>
+                <div class="faq-plus"></div>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">Placeholder: Our product is priced to be affordable, so we don&#x27;t give any
+                discounts. We already offer our product at a competitive price.<br></p>
+            </div>
+          </div>
+          <div class="faq-wrap">
+            <div class="faq-question">
+              <div class="faq-q-text">Is there a long-term contract?</div>
+              <div class="faq-plus-wrap">
+                <div class="faq-plus-l"></div>
+                <div class="faq-plus"></div>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">Placeholder: No, we don&#x27;t force you into any long-term contracts. Our best
+                price is available as an annual subscription, but we offer monthly subscriptions as well.</p>
+            </div>
+          </div>
+          <div class="faq-wrap">
+            <div class="faq-question">
+              <div class="faq-q-text">Which payments do you accept?</div>
+              <div class="faq-plus-wrap">
+                <div class="faq-plus-l"></div>
+                <div class="faq-plus"></div>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">Placeholder: We accept online payments through Visa, MasterCard, and American
+                Express. If you don&#x27;t have a credit card, we accept checks, PayPal (you must have a PayPal
+                account), and wire transfers. To arrange offline payments, or if you have any questions, please <a
+                  href="#" class="normal-font">contact our sales team</a>.<br></p>
+            </div>
+          </div>
+          <div class="faq-wrap">
+            <div class="faq-question">
+              <div class="faq-q-text">How do transaction fees work?</div>
+              <div class="faq-plus-wrap">
+                <div class="faq-plus-l"></div>
+                <div class="faq-plus"></div>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p class="faq-answer-text">Placeholder: During this time we found that our smallest customers accounted
+                for a significant amount of our support resources. We have changed our pricing structure so that we can
+                better meet the needs of all our customers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div data-w-id="dc06095e-712f-20ef-aaa2-14855b29c909" class="container">
+      <div class="footer-row"><img src="/assets/images/heart.svg" alt="" class="footer-image">
+        <div>
+          <div class="social-icon"><img src="/assets/images/twitter.svg" alt=""></div>
+          <div class="social-icon"><img src="/assets/images/facebook.svg" alt=""></div>
+          <div class="social-icon"><img src="/assets/images/google.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-copywrite">© YourBrand 2019. All rights reserved.<br></div>
+        <div class="footer-link-wrapper"><a href="#" class="footer-link">Contact</a><a href="pricing"
+            class="footer-link w--current">Pricing</a><a href="#" class="footer-link">About Us</a><a href="#"
+            class="footer-link">Support</a>
+          <div memberstack-template="Light Template" class="template-tag"><a href="http://memberstack.io"
+              target="_blank" class="w-inline-block"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
