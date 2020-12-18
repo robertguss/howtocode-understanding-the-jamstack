@@ -3,28 +3,30 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import Skus from '../components/Products/Skus'
+import Products from '../components/Products/Products'
 import CartOverview from '../components/CartOverview'
 
 import { loadStripe } from '@stripe/stripe-js'
 import { CartProvider } from 'use-shopping-cart'
 
-const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE)
+
+const url = typeof window !== 'undefined' ? window.location.origin: null;
 
 const CartExample = () => (
   <Layout>
-    <SEO title="Cart Example" />
+    <SEO title="Dev Shirts" />
     <CartProvider
       mode="client-only"
       stripe={stripePromise}
-      successUrl={`${window.location.origin}/page-2/`}
-      cancelUrl={`${window.location.origin}/`}
+      successUrl={`${url}/page-2/`}
+      cancelUrl={`${url}/`}
       currency="USD"
       allowedCountries={['US', 'GB', 'CA']}
       billingAddressCollection={true}
     >
       <CartOverview />
-      <Skus />
+      <Products />
     </CartProvider>
   </Layout>
 )

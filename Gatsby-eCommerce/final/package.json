@@ -19,10 +19,10 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "use-shopping-cart": "^2.2.0"
+    "use-shopping-cart": "^2.3.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "2.2.1"
   },
   "keywords": [
     "gatsby"
