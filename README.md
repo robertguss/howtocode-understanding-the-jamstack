@@ -1,3 +1,3 @@
-# Understanding the Jamstack Course Repo
+# HowToCode.io - Understanding the Jamstack
 
-This repo contains all of the project repo's for my Jamstack course on Udemy.
+This repo contains all of the projects for the Understanding the Jamstack tutorials on [HowToCode](https://howtocode.io).
